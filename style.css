@@ -1,30 +1,52 @@
-*{
+* {
   box-sizing: border-box;
-}.popover-content{
-box-shadow:  0 0 10px gray;
-padding: 15px;
-border-radius: 10px;
-
-background-color:  rgba(241, 176, 56, 0.822);
-
-position: absolute;
-left: 0;
-top: 35px;
-
-display: none;
 }
-.popover button:focus +.popover-content{
+
+.example-1::before {
+  content: "HELLO";
+}
+.example-1::after {
+  content: "BYE";
+  font-weight: 700;
+}
+.example-2::before {
+  content: "😮";
+}
+.example-2::after {
+  content: "ssssss🤐";
+}
+.example-3::before {
+  content: "AA";
+}
+.example-3::after {
+  content: "BB";
+}
+
+.popover-content {
+  box-shadow: 0 0 10px gray;
+  padding: 15px;
+  border-radius: 10px;
+
+  background-color: rgba(241, 176, 56, 0.822);
+
+  position: absolute;
+  left: 0;
+  top: 35px;
+
+  display: none;
+}
+.popover button:focus + .popover-content {
   display: block;
 }
 
-.popover-content span{
+.popover-content span {
   display: block;
   height: 10px;
   width: 20px;
   border-bottom: 10px solid rgba(241, 176, 56, 0.822);
-  border-left : 10px solid transparent ;
-  border-right: 10px solid transparent ;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
 
   position: absolute;
-  top: -10px ;
+  top: -10px;
 }
