@@ -4,13 +4,19 @@
 box-shadow:  0 0 10px gray;
 padding: 15px;
 border-radius: 10px;
-display: inline-block;
+
 background-color:  rgba(241, 176, 56, 0.822);
 
 position: absolute;
 left: 0;
 top: 35px;
+
+display: none;
 }
+.popover button:focus +.popover-content{
+  display: block;
+}
+
 .popover-content span{
   display: block;
   height: 10px;
